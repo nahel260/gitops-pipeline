@@ -24,5 +24,5 @@ jobs:
 
       - name: Tag and push image to GitHub Container Registry
         run: |
-          docker tag quay.io/your-image:tag ghcr.io/${{ github.repository_owner }}/your-image:tag
-          docker push ghcr.io/${{ github.nahel260 }}/your-image:tag
+          docker tag quay.io/your-image:tag ghcr.io/${{ github.repository_owner }}/nahel94/person-service
+          docker push ghcr.io/${{ github.nahel260 }}/nahel94/person-service
