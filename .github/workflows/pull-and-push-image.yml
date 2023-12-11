@@ -17,7 +17,7 @@ jobs:
         run: docker login -u ${{ secrets.nahel94 }} -p ${{ secrets.tECW9UBs5rcecy4OsFtLW2KFvdcov0eFqwhiXRyGR4ftSUB8yAAxkdWJgwZhUPj3 }} quay.io
 
       - name: Pull image from Quay.io
-        run: docker pull quay.io/your-image:tag
+        run: docker pull quay.io/person-service
 
       - name: Login to GitHub Container Registry
         run: echo "${{ secrets.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 }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
@@ -25,4 +25,4 @@ jobs:
       - name: Tag and push image to GitHub Container Registry
         run: |
           docker tag quay.io/your-image:tag ghcr.io/${{ github.repository_owner }}/your-image:tag
-          docker push ghcr.io/${{ github.repository_owner }}/your-image:tag
+          docker push ghcr.io/${{ github.nahel260 }}/your-image:tag
